@@ -15,7 +15,7 @@ export default function Index() {
         <Aurora />
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,_hsl(var(--neon-emerald)/0.06),_transparent_65%)]" />
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-24 pb-16">
-          <div className="grid items-center gap-10 md:grid-cols-2">
+          <div className="flex flex-col items-center text-center gap-10 md:grid md:grid-cols-2 md:items-center md:text-left">
             <div>
               <p className="inline-flex items-center gap-2 rounded-full border border-emerald-400/30 bg-emerald-500/10 px-3 py-1 text-xs text-emerald-700">
                 <Sparkles className="text-emerald-600" /> Powered by AI + Satellites
@@ -23,16 +23,16 @@ export default function Index() {
               <h1 className="mt-5 text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">
                 <span className="block text-foreground"><Typewriter text="Revolutionizing Farming with Intelligence" speed={20} /></span>
               </h1>
-              <p className="mt-5 max-w-xl text-muted-foreground">
-                Aaranya AI combines nature’s wisdom with artificial intelligence to help farmers grow smarter.
+              <p className="mt-5 max-w-xl text-muted-foreground md:mx-0 mx-auto">
+                Aaranya AI combines nature's wisdom with artificial intelligence to help farmers grow smarter.
               </p>
-              <div className="mt-8 flex flex-wrap items-center gap-4">
+              <div className="mt-8 flex flex-wrap items-center justify-center md:justify-start gap-4">
                 <Button asChild size="lg" className="bg-emerald-500 text-emerald-950 hover:bg-emerald-400 shadow-[0_0_30px_hsl(var(--neon-emerald)/0.35)]">
-                  <a href="https://drive.usercontent.google.com/download?id=17F-icdJPntzSF6152RjNE_wnc3LDNUiR&export=download&authuser=0">Download APK</a>
+                  <a href="#download">Download APK</a>
                 </Button>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative flex justify-center md:justify-end">
               <div className="absolute -right-10 -top-10 h-56 w-56 rounded-full bg-emerald-400/10 blur-3xl" />
               <SatelliteOrbit />
               <img
