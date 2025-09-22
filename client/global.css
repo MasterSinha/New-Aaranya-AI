@@ -1,0 +1,129 @@
+/** @import must precede all other statements */
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Tailwind CSS theme
+   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
+   * Keep HSL to ensure consistent theming.
+  */
+  :root {
+    /* Light white + Green theme */
+    --background: 0 0% 100%; /* white */
+    --foreground: 160 10% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 160 10% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 160 10% 12%;
+
+    --primary: 152 61% 45%; /* emerald */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 150 40% 96%;
+    --secondary-foreground: 160 10% 12%;
+
+    --muted: 160 10% 96%;
+    --muted-foreground: 160 6% 38%;
+
+    --accent: 152 40% 95%;
+    --accent-foreground: 160 10% 12%;
+
+    --destructive: 0 84% 58%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 160 10% 90%;
+    --input: 160 10% 90%;
+    --ring: 152 61% 45%;
+
+    --radius: 0.75rem;
+
+    /* Sidebar (kept in sync with theme) */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 160 10% 12%;
+    --sidebar-primary: 152 61% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 150 40% 96%;
+    --sidebar-accent-foreground: 160 10% 12%;
+    --sidebar-border: 160 10% 90%;
+    --sidebar-ring: 152 61% 45%;
+
+    /* Extra tokens for effects (HSL only) */
+    --neon-emerald: 155 100% 40%;
+    --neon-cyan: 175 100% 45%;
+    --aurora-1: 155 70% 75%;
+    --aurora-2: 190 80% 80%;
+    --aurora-3: 120 60% 75%;
+  }
+
+  .dark {
+    /* Slightly deeper dark variant */
+    --background: 160 28% 5%;
+    --foreground: 160 20% 96%;
+
+    --card: 160 22% 7%;
+    --card-foreground: 160 20% 96%;
+
+    --popover: 160 22% 7%;
+    --popover-foreground: 160 20% 96%;
+
+    --primary: 152 61% 45%;
+    --primary-foreground: 160 20% 96%;
+
+    --secondary: 162 35% 18%;
+    --secondary-foreground: 160 20% 96%;
+
+    --muted: 160 12% 16%;
+    --muted-foreground: 160 8% 70%;
+
+    --accent: 155 45% 14%;
+    --accent-foreground: 160 20% 96%;
+
+    --destructive: 0 62% 40%;
+    --destructive-foreground: 160 20% 96%;
+
+    --border: 160 14% 16%;
+    --input: 160 14% 16%;
+    --ring: 152 61% 45%;
+
+    --sidebar-background: 160 28% 5%;
+    --sidebar-foreground: 160 20% 96%;
+    --sidebar-primary: 152 61% 45%;
+    --sidebar-primary-foreground: 160 20% 96%;
+    --sidebar-accent: 162 35% 18%;
+    --sidebar-accent-foreground: 160 20% 96%;
+    --sidebar-border: 160 14% 16%;
+    --sidebar-ring: 152 61% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: "Sora", ui-sans-serif, system-ui, -apple-system, Segoe UI,
+      Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji",
+      "Segoe UI Emoji";
+    background-image: radial-gradient(1200px 600px at 10% 10%, hsl(var(--aurora-1)/0.08), transparent 60%),
+      radial-gradient(800px 400px at 90% 20%, hsl(var(--aurora-2)/0.07), transparent 60%),
+      radial-gradient(1000px 500px at 50% 100%, hsl(var(--aurora-3)/0.06), transparent 60%);
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    background: hsl(var(--neon-emerald)/0.35);
+    color: hsl(var(--foreground));
+  }
+}
