@@ -169,7 +169,7 @@ export default function Index() {
           </p>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-emerald-500 text-emerald-950 hover:bg-emerald-400 shadow-[0_0_40px_hsl(var(--neon-emerald)/0.45)]">
-              <a href="https://drive.usercontent.google.com/download?id=17F-icdJPntzSF6152RjNE_wnc3LDNUiR&export=download&authuser=0">Download APK</a>
+              <a href="https://drive.usercontent.google.com/download?id=1JBnBW-canTJmnKsyAla2ABdq_1Pnsix5&export=download&authuser=0">Download APK</a>
             </Button>
             <p className="mt-2 text-xs text-muted-foreground">Android only for early access</p>
           </div>
