@@ -26,7 +26,7 @@ export default function Header() {
         </nav>
         <div className="flex items-center gap-3">
           <Button asChild className="hidden md:inline-flex bg-emerald-500 text-emerald-950 hover:bg-emerald-400 shadow-[0_0_30px_hsl(var(--neon-emerald)/0.35)]">
-            <a href="https://drive.usercontent.google.com/download?id=17F-icdJPntzSF6152RjNE_wnc3LDNUiR&export=download&authuser=0"><Download /> Download APK</a>
+            <a href="https://drive.usercontent.google.com/download?id=1JBnBW-canTJmnKsyAla2ABdq_1Pnsix5&export=download&authuser=0"><Download /> Download APK</a>
           </Button>
           <Button
             variant="ghost"
