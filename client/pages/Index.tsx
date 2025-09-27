@@ -5,12 +5,12 @@ import SatelliteOrbit from "@/components/animated/SatelliteOrbit";
 import { Button } from "@/components/ui/button";
 import FeatureCard from "@/components/FeatureCard";
 import Timeline from "@/components/Timeline";
-// Phone mockup replaced by static image from public
+
 
 export default function Index() {
   return (
     <main className="relative">
-      {/* HERO */}
+      
       <section id="hero" className="relative overflow-hidden scroll-mt-24">
         <Aurora />
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,_hsl(var(--neon-emerald)/0.06),_transparent_65%)]" />
@@ -18,10 +18,10 @@ export default function Index() {
           <div className="flex flex-col items-center text-center gap-10 md:grid md:grid-cols-2 md:items-center md:text-left">
             <div>
               <p className="inline-flex items-center gap-2 rounded-full border border-emerald-400/30 bg-emerald-500/10 px-3 py-1 text-xs text-emerald-700">
-                <Sparkles className="text-emerald-600" /> Powered by AI + Satellites
+                <Sparkles className="text-emerald-600" /> Powered by AI + Iot + Satellites
               </p>
               <h1 className="mt-5 text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">
-                <span className="block text-foreground"><Typewriter text="Revolutionizing Farming with Intelligence" speed={20} /></span>
+                <span className="block text-foreground"><Typewriter text="Transforming Farming with Intelligence" speed={20} /></span>
               </h1>
               <p className="mt-5 max-w-xl text-muted-foreground md:mx-0 mx-auto">
                 Aaranya AI combines nature's wisdom with artificial intelligence to help farmers grow smarter.
@@ -36,7 +36,7 @@ export default function Index() {
               <div className="absolute -right-10 -top-10 h-56 w-56 rounded-full bg-emerald-400/10 blur-3xl" />
               <SatelliteOrbit />
               <img
-                src="/pic.jpg"
+                src="/pic1.jpg"
                 alt="App preview"
                 className="w-full h-auto max-w-[200px] sm:max-w-[240px] md:max-w-[280px] lg:max-w-[320px] rounded-xl border border-border/60 shadow-lg"
               />
@@ -45,65 +45,126 @@ export default function Index() {
         </div>
       </section>
 
-      {/* STORY */}
+      
       <section id="story" className="relative py-20 scroll-mt-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-10 md:grid-cols-2">
-            <div className="rounded-2xl border border-border/60 bg-card/60 p-6">
-              <h3 className="text-xl font-semibold">The Problem</h3>
-              <ul className="mt-4 space-y-3">
-                <li className="group rounded-md border border-border/60 bg-background/40 p-4">
-                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-200 to-cyan-300">Unpredictable weather</span>
-                  <div className="mt-1 text-sm text-muted-foreground">Hard-to-plan seasons and sudden extremes.</div>
-                </li>
-                <li className="group rounded-md border border-border/60 bg-background/40 p-4">
-                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-200 to-cyan-300">Pests and disease</span>
-                  <div className="mt-1 text-sm text-muted-foreground">Threats spread before anyone notices.</div>
-                </li>
-                <li className="group rounded-md border border-border/60 bg-background/40 p-4">
-                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-200 to-cyan-300">Low yields</span>
-                  <div className="mt-1 text-sm text-muted-foreground">Decisions are reactive, not proactive.</div>
-                </li>
-              </ul>
+  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div className="grid gap-10 md:grid-cols-2">
+      
+      {/* Problem Box */}
+      <div className="rounded-2xl border border-rose-500/40 bg-gradient-to-br from-rose-500/10 to-orange-500/10 p-6 shadow-sm">
+        <h3 className="text-xl font-bold text-rose-600">The Problem</h3>
+        <ul className="mt-4 space-y-3">
+          <li className="group rounded-md border border-rose-400/40 bg-background/60 p-4 hover:shadow-md transition">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-500 to-orange-400 font-semibold">
+              Unpredictable weather
+            </span>
+            <div className="mt-1 text-sm text-muted-foreground">
+              Hard-to-plan seasons and sudden extremes.
             </div>
-            <div className="rounded-2xl border border-emerald-500/30 bg-gradient-to-br from-emerald-500/10 to-cyan-500/10 p-6">
-              <h3 className="text-xl font-semibold">The Aaranya AI Way</h3>
-              <ul className="mt-4 space-y-3">
-                <li className="rounded-md border border-emerald-500/30 bg-background/40 p-4">
-                  <div className="flex items-center gap-2 text-emerald-600"><CheckCircle2 /> Real-time insights</div>
-                  <div className="mt-1 text-sm text-muted-foreground">Plan with precision and alerts that matter.</div>
-                </li>
-                <li className="rounded-md border border-emerald-500/30 bg-background/40 p-4">
-                  <div className="flex items-center gap-2 text-emerald-600"><CheckCircle2 /> AI pest prediction</div>
-                  <div className="mt-1 text-sm text-muted-foreground">Early warnings before threats spread.</div>
-                </li>
-                <li className="rounded-md border border-emerald-500/30 bg-background/40 p-4">
-                  <div className="flex items-center gap-2 text-emerald-600"><CheckCircle2 /> Soil health intelligence</div>
-                  <div className="mt-1 text-sm text-muted-foreground">Understand the foundation; grow sustainably.</div>
-                </li>
-              </ul>
+          </li>
+          <li className="group rounded-md border border-rose-400/40 bg-background/60 p-4 hover:shadow-md transition">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-500 to-orange-400 font-semibold">
+              Pests and disease
+            </span>
+            <div className="mt-1 text-sm text-muted-foreground">
+              Threats spread before anyone notices.
             </div>
-          </div>
-        </div>
-      </section>
+          </li>
+          <li className="group rounded-md border border-rose-400/40 bg-background/60 p-4 hover:shadow-md transition">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-500 to-orange-400 font-semibold">
+              Low yields
+            </span>
+            <div className="mt-1 text-sm text-muted-foreground">
+              Decisions are reactive, not proactive.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      {/* Solution Box */}
+      <div className="rounded-2xl border border-emerald-500/50 bg-gradient-to-br from-emerald-500/10 to-cyan-500/10 p-6 shadow-sm">
+        <h3 className="text-xl font-bold text-emerald-600">The Aaranya AI Way</h3>
+        <ul className="mt-4 space-y-3">
+          <li className="rounded-md border border-emerald-400/40 bg-background/60 p-4 hover:shadow-md transition">
+            <div className="flex items-center gap-2 text-emerald-600">
+              <CheckCircle2 /> Real-time insights
+            </div>
+            <div className="mt-1 text-sm text-muted-foreground">
+              Plan with precision and alerts that matter.
+            </div>
+          </li>
+          <li className="rounded-md border border-emerald-400/40 bg-background/60 p-4 hover:shadow-md transition">
+            <div className="flex items-center gap-2 text-emerald-600">
+              <CheckCircle2 /> AI pest prediction
+            </div>
+            <div className="mt-1 text-sm text-muted-foreground">
+              Early warnings before threats spread.
+            </div>
+          </li>
+          <li className="rounded-md border border-emerald-400/40 bg-background/60 p-4 hover:shadow-md transition">
+            <div className="flex items-center gap-2 text-emerald-600">
+              <CheckCircle2 /> Soil health intelligence
+            </div>
+            <div className="mt-1 text-sm text-muted-foreground">
+              Understand the foundation; grow sustainably.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
       {/* FEATURES */}
-      <section id="features" className="relative py-20 scroll-mt-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h3 className="text-center text-3xl font-bold">Features</h3>
-          <p className="mx-auto mt-2 max-w-2xl text-center text-muted-foreground">
-            A balance of farm wisdom and neural precision — designed for real fields and real results.
-          </p>
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <FeatureCard icon={<Leaf />} title="Soil Intelligence" subtitle="Your farm’s foundation, decoded by AI." />
-            <FeatureCard icon={<Sprout />} title="Crop Vitality" subtitle="Monitor health as if nature could text you updates." />
-            <FeatureCard icon={<Bug />} title="Pest Prediction" subtitle="Early alerts before threats spread." />
-            <FeatureCard icon={<BarChart2 />} title="Actionable Analytics" subtitle="Numbers that talk like wisdom." />
-            <FeatureCard icon={<CloudSun />} title="Smart Weather Insights" subtitle="Forecasts that matter for farmers." />
-            <FeatureCard icon={<Sparkles />} title="AI Assistance" subtitle="Guidance that learns your land." />
-          </div>
-        </div>
-      </section>
+<section id="features" className="relative py-20 scroll-mt-24">
+  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    {/* Title */}
+    <h3 className="text-center text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-cyan-400 to-blue-500">
+      Features
+    </h3>
+    <p className="mx-auto mt-3 max-w-2xl text-center text-lg text-muted-foreground">
+      A balance of farm wisdom and neural precision — designed for real fields and real results.
+    </p>
+
+    {/* Feature Grid */}
+    <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 text-center">
+      <FeatureCard
+        icon={<Leaf className="h-10 w-10 text-emerald-500 mx-auto" />}
+        title="Soil Intelligence"
+        subtitle="Your farm’s foundation, decoded by AI."
+      />
+      <FeatureCard
+        icon={<Sprout className="h-10 w-10 text-green-500 mx-auto" />}
+        title="Crop Vitality"
+        subtitle="Monitor health as if nature could text you updates."
+      />
+      <FeatureCard
+        icon={<Bug className="h-10 w-10 text-rose-500 mx-auto" />}
+        title="Pest Prediction"
+        subtitle="Early alerts before threats spread."
+      />
+      <FeatureCard
+        icon={<BarChart2 className="h-10 w-10 text-indigo-500 mx-auto" />}
+        title="Actionable Analytics"
+        subtitle="Numbers that talk like wisdom."
+      />
+      <FeatureCard
+        icon={<CloudSun className="h-10 w-10 text-yellow-500 mx-auto" />}
+        title="Smart Weather Insights"
+        subtitle="Forecasts that matter for farmers."
+      />
+      <FeatureCard
+        icon={<Sparkles className="h-10 w-10 text-purple-500 mx-auto" />}
+        title="AI Assistance"
+        subtitle="Guidance that learns your land."
+      />
+    </div>
+  </div>
+</section>
+
+
 
       {/* HOW IT WORKS */}
       <section id="how" className="relative py-20 scroll-mt-24">
@@ -114,7 +175,7 @@ export default function Index() {
           </p>
           <div className="mt-10 flex flex-col items-center gap-10">
             <Timeline />
-            {/* Live Demo section removed as requested */}
+            
           </div>
         </div>
       </section>

@@ -14,7 +14,7 @@ export default function Header() {
           </div>
           <span className="text-lg font-semibold tracking-wide">
             <span className="text-foreground">Aaranya</span>
-            <span className="text-emerald-600"> AI</span>
+            <span className="text-emerald-600">_AI</span>
           </span>
         </a>
         <nav className="hidden md:flex items-center gap-6 lg:gap-8 text-sm">
